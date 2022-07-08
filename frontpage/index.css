@@ -1,0 +1,46 @@
+/* index.css */
+
+header {
+    margin-top: 1em;
+}
+
+div#satorsq {
+    margin-top: 0;
+    background-image: url(index-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#satorsq span {
+    display: inline-block;
+    width: 20%;
+    font-size: 3em;
+    font-family: Serif;
+    text-align: center;
+    opacity: 0%;
+    cursor: default;
+    user-select: none;
+}
+
+section#content h1 {
+    text-align: center;
+    font-family: Monospace;
+}
+
+nav {
+    text-align: center;
+}
+
+a.wip {
+    /* text-decoration: line-through; */
+    pointer-events: none;       /*disables clicks*/
+    cursor: pointer;            /*but do indicate it’s a link*/
+}
+
+a.wip:after {
+    content: '[wip]';
+    font-size: .6em;
+    text-decoration: none;
+    vertical-align: super;
+}
